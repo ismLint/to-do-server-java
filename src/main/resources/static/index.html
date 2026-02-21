@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 ToDo-List</h1>
+            <p>Добавляй, отмечай, удаляй — всё под контролем!</p>
+        </header>
+
+        <main>
+            <!-- Форма для добавления новой задачи -->
+            <form id="taskForm" class="task-form">
+                <input type="text" id="newTaskInput" placeholder="Что нужно сделать?" required autocomplete="off"/>
+                <button type="submit">➕ Добавить</button>
+            </form>
+
+            <!-- Счетчик задач -->
+            <div class="stats">
+                <span id="totalCount">Всего: 0</span>
+                <span id="completedCount">Выполнено: 0</span>
+            </div>
+
+            <!-- Список задач -->
+            <ul id="taskList" class="task-list">
+                <!-- Задачи будут добавляться сюда -->
+            </ul>
+
+            <!-- Сообщение о статусе -->
+            <div id="statusMessage" class="status-message"></div>
+        </main>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
